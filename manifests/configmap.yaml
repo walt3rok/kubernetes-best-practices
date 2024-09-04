@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demoapp-config
+data:
+  app-config.yml: |
+    logLevel: info
+    maxConnections: 100
+
