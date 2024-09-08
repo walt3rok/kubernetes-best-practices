@@ -6,4 +6,3 @@ data:
   app-config.yml: |
     logLevel: info
     maxConnections: 100
-
