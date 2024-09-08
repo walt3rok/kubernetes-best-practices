@@ -16,6 +16,15 @@ This repository is designed for **beginners** who are new to Kubernetes and want
   - **`configmap.yaml`**: Example ConfigMap for managing configuration data.
   - **`secrets.yaml`**: Example Secrets manifest for securely storing sensitive data.
   - **`service.yaml`**: A Service manifest for exposing the application.
+## Directory Structure
+- **.github/workflows**: CI/CD pipelines for automated Kubernetes deployments.
+- **charts/**: Helm charts for managing Kubernetes resources.
+- **manifests/**: Raw Kubernetes YAML files for different resources.
+- **environments/**: Environment-specific configurations for dev and prod.
+- **rbac/**: Role-based access control configurations.
+- **monitoring/**: Prometheus and Grafana configurations for monitoring.
+- **network-policies/**: Network security policies to control traffic flow.
+
 
 ## Getting Started
 
