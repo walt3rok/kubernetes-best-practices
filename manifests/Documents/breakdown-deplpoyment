@@ -1,0 +1,20 @@
+Explanation of Key Sections:
+
+    apiVersion: apps/v1
+        Specifies the API version used. apps/v1 is the stable version for defining Deployment objects.
+
+    kind: Deployment
+        Specifies the type of object, in this case, a Deployment, which manages a set of replicated Pods.
+
+    metadata
+        name: Defines the name of the deployment (demoapp-blue).
+        labels: Labels (app: demoapp, env: blue) are used to organize and identify resources.
+
+    spec
+        replicas: Ensures 3 instances (Pods) are running.
+        selector: Selects Pods based on the app: demoapp and env: blue labels.
+        template: Describes the pod’s specification and ensures it matches the selector.
+            containers: Specifies the container settings:
+                name: The container's name (demo).
+                image: The container image (demoapp:v1.0).
+                ports: Exposes container port 80 for incoming traffic.
